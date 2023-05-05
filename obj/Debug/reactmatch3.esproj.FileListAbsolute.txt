@@ -1,0 +1,2 @@
+C:\Users\the_w\source\repos\reactmatch3\obj\Debug\reactmatch3.esproj.SuggestedBindingRedirects.cache
+C:\Users\the_w\source\repos\reactmatch3\obj\Debug\reactmatch3.esproj.CoreCompileInputs.cache

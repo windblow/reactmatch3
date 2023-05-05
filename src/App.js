@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, React } from 'react';
+import GameBoard from './components/GameBoard';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [board, setBoard] = useState(() => {
+        // Generate a 2D array with random piece types for each cell
+        const initialBoard = Array.from({ length: 5 }, () =>
+            Array.from({ length: 8 }, () => {
+                const types = ['red', 'blue', 'green'];
+                return types[Math.floor(Math.random() * types.length)];
+            })
+        );
+        return initialBoard;
+    });
+
+    return (
+        <div className="app">
+            <GameBoard board={board} cellSize="32" />
+        </div>
+    );
 }
 
 export default App;

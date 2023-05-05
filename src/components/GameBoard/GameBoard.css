@@ -1,0 +1,14 @@
+.game-board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-board {
+    white-space: nowrap;
+}
+
+.row {
+    margin-bottom: 0px;
+}
