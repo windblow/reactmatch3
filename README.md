@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# React Match-3
+
+I started learning React.js a couple weeks ago, but the tutorials were boring. Since I know that, in order to really make a framework _sing_, you have to make a game in it, and since I've never tried my hand at these Match-3 games, I decided I should just go for two variables at once and make this.
+
+Work in progress. Currently just displays a board with 3 different types of pieces (randomized) and allows the player to swap neighboring pieces. Next update should have the actual matching mechanic.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
